@@ -147,6 +147,7 @@ ul {
 
 .header-list {
     display: flex;
+    align-items: center;
 
     padding: 0;
     margin: 0;
@@ -159,7 +160,8 @@ ul {
 }
 
 .header-link {
-    display: block;
+    display: flex;
+    align-items: center;
 
     padding-top: 32px;
     padding-bottom: 32px;
@@ -182,16 +184,35 @@ ul {
     color: var(--accent-color);
 }
 
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .contacts {
     display: flex;
     margin-left: auto;
 }
 
 /* HERO */
-.hero-section {
+.hero-container {
+
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(
+        to right, 
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)
+        ), 
+        url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
 
     background-color: var(--hero-background-color);
 }
@@ -244,6 +265,13 @@ ul {
 .benefits-item {
     width: 270px;
     margin-right: 30px;
+    display: flex;
+}
+
+.benefits-item {
+    display: block;
+    width: 270px;
+    height: 120px;
 }
 
 .benefits-item:last-child {
@@ -272,9 +300,18 @@ ul {
     color: var(--primary-grey-color);
 }
 
+.icons-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+}
+
 /* Work/Team-section */
 .work-main-title,
-.team-main-title {
+.team-main-title,
+.clients-main-title {
     margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
@@ -333,13 +370,81 @@ ul {
 }
 
 .team-text {
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     font-size: var(--team-font-size);
     line-height: 1.18;
     letter-spacing: 0.03em;
 
     color: var(--primary-grey-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #2196F3;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icon {
+    fill: #303030;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: #ffffff;
+}
+/* Clients */
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-icon {
+    fill: #AFB1B8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: #2196F3;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: #2196F3;
 }
 
 /* FOOTER */
@@ -382,6 +487,17 @@ footer {
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-color);
+}
+.join {
+    display: block;
+    width: 206px;
+    height: 80px;
+    justify-content:center;
+}
+.join-title {
+    display: flex;
+    margin-bottom: 20px;
+    color: #FFFFFF;
 }
 
 /* PORTFOLIO */
