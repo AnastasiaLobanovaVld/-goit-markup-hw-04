@@ -454,6 +454,15 @@ footer {
     background-color: var(--footer-background-color);
 }
 
+.footer-container {
+    display: flex;
+}
+
+.first-container {
+    display: block;
+    margin-right: 70px;
+}
+
 .footer-logo {
     margin-bottom: 20px;
 }
@@ -487,14 +496,11 @@ footer {
 .footer-link:focus {
     color: var(--accent-color);
 }
-.join {
+.join-container {
     display: block;
-    width: 206px;
-    height: 80px;
     justify-content:center;
 }
 .join-title {
-    display: flex;
     margin-bottom: 20px;
     color: #FFFFFF;
 }
