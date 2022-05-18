@@ -524,6 +524,11 @@ footer {
     background-color: rgba(0, 0, 0, 0.10)
 }
 
+.join-container .social-link:hover,
+.join-container .social-link:focus {
+    background-color: var(--accent-color);
+}
+
 
 /* PORTFOLIO */
 .works-list {
