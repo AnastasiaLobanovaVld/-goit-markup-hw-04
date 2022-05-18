@@ -41,7 +41,7 @@
     Font-family
     ----------------------------
     */
-    --primary-font-famili: 'Roboto', sans-serif;
+    --primary-font-family: 'Roboto', sans-serif;
     --secondary-font-family: 'Raleway', sans-serif;
 
     /*
@@ -346,6 +346,12 @@ ul {
 .team-group {
     padding-top: 30px;
     padding-bottom: 30px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #FFFFFF;
 }
 .team-list {
     display: flex;
@@ -404,7 +410,7 @@ ul {
 }
 
 .social-icon {
-    fill: #303030;
+    fill: #AFB1B8;
 }
 
 .social-link:hover .social-icon,
@@ -502,8 +508,22 @@ footer {
 }
 .join-title {
     margin-bottom: 20px;
-    color: #FFFFFF;
+    font-weight: var(--bold-font-weight);
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
 }
+
+.join-container .social-icon {
+    fill: #FFFFFF;
+}
+
+.join-container .social-link {
+    background-color: rgba(0, 0, 0, 0.10)
+}
+
 
 /* PORTFOLIO */
 .works-list {
@@ -540,6 +560,10 @@ footer {
     color: var(--primary-white-color);
     background-color: var(--background-blue-color);
 }
+.works-btn:hover,
+.works-btn:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 .example-list {
     display: flex;
@@ -547,6 +571,11 @@ footer {
     margin-bottom: 0;
     padding-left: 0px;
     flex-wrap: wrap;
+}
+
+.example-item:hover,
+.example-item:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .example-item{
